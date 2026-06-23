@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Force Security Protection | RSP - Ahmedabad</title>
+<meta name="description" content="Red Force Security Protection (RSP) - Professional security services in Ahmedabad since 2009.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">
+    <img src="images/logo.png" alt="RSP Logo">
+    <div><div class="nav-brand"><span>RED</span> FORCE</div><div class="nav-sub">Security Protection</div></div>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#why" onclick="closeMobile()">Why Us</a>
+  <a href="#clients" onclick="closeMobile()">Clients</a>
+  <a href="#contact" onclick="closeMobile()">Get a Quote →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-pill">Trusted Since 2009</div>
+      <h1>RED FORCE<span class="r">SECURITY</span></h1>
+      <div class="hero-tagline">Protection · Vigilance · Trust</div>
+      <p class="hero-desc">Red Force Security Protection delivers professional, trained, and reliable security solutions for homes, businesses, and individuals across Ahmedabad and Gujarat.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-red">Request a Quote</a>
+        <a href="#services" class="btn-ghost">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-n">15+</div><div class="stat-l">Years Active</div></div>
+        <div class="stat"><div class="stat-n">500+</div><div class="stat-l">Clients Served</div></div>
+        <div class="stat"><div class="stat-n">6</div><div class="stat-l">Core Services</div></div>
+        <div class="stat"><div class="stat-n">24/7</div><div class="stat-l">Operations</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="logo-glow-wrap">
+        <div class="logo-ring r1"></div>
+        <div class="logo-ring r2"></div>
+        <img class="hero-logo" src="images/logo.png" alt="Red Force Security Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div>
+      <div class="carousel-wrap">
+        <div class="carousel-progress"><div class="carousel-progress-bar" id="progressBar"></div></div>
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide"><img src="images/img1.png" alt="Event Security Briefing" loading="lazy"><div class="slide-label"><div><div class="slide-service">Planning & Command</div><div class="slide-title">Event Security Briefing</div></div><div class="slide-num">01</div></div></div>
+            <div class="carousel-slide"><img src="images/img2.png" alt="Residential Security" loading="lazy"><div class="slide-label"><div><div class="slide-service">Society & Apartment Guard</div><div class="slide-title">Residential Security</div></div><div class="slide-num">02</div></div></div>
+            <div class="carousel-slide"><img src="images/img3.png" alt="Event Bouncer" loading="lazy"><div class="slide-label"><div><div class="slide-service">Crowd & Access Control</div><div class="slide-title">Event Bouncer</div></div><div class="slide-num">03</div></div></div>
+            <div class="carousel-slide"><img src="images/img4.png" alt="Industrial Security" loading="lazy"><div class="slide-label"><div><div class="slide-service">Warehouse & Night Patrol</div><div class="slide-title">Industrial Security</div></div><div class="slide-num">04</div></div></div>
+            <div class="carousel-slide"><img src="images/img5.png" alt="Personal Security" loading="lazy"><div class="slide-label"><div><div class="slide-service">VIP & Executive Guard</div><div class="slide-title">Personal Security</div></div><div class="slide-num">05</div></div></div>
+            <div class="carousel-slide"><img src="images/img6.png" alt="Housekeeping Staff" loading="lazy"><div class="slide-label"><div><div class="slide-service">Office & Facility Care</div><div class="slide-title">Housekeeping Staff</div></div><div class="slide-num">06</div></div></div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" id="prevBtn"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button class="carousel-btn next" id="nextBtn"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-label">About Red Force</div>
+      <div class="sec-title">Protection You Can <span>Trust</span></div>
+      <p class="about-text">Founded in 2009, Red Force Security Protection (RSP) has been a trusted name in professional security services across Ahmedabad and Gujarat. With over 15 years of experience, we deliver trained, disciplined, and reliable security personnel for every need.</p>
+      <p class="about-text">From guarding residential societies and corporate offices to providing elite personal protection and housekeeping staff, our team upholds the highest standards of vigilance, integrity, and professionalism.</p>
+      <div class="pillars">
+        <div class="pillar"><div class="p-title">Our Mission</div><div class="p-desc">To deliver uncompromising protection that gives clients total peace of mind.</div></div>
+        <div class="pillar"><div class="p-title">Our Vision</div><div class="p-desc">To be Gujarat's most trusted and professional security solutions provider.</div></div>
+        <div class="pillar"><div class="p-title">Trained Staff</div><div class="p-desc">All guards undergo rigorous physical and situational training before deployment.</div></div>
+        <div class="pillar"><div class="p-title">Licensed & Verified</div><div class="p-desc">Fully compliant with security regulations and background-verified personnel.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="sec-head">
+    <div class="sec-label">What We Offer</div>
+    <div class="sec-title">Our <span>Services</span></div>
+    <p class="sec-desc">Comprehensive security solutions protecting people, property, and peace of mind  24 hours a day, every day.</p>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg5.png" alt="Personal Security" loading="lazy"><div class="svc-num">01</div></div><div class="svc-body"><div class="svc-name">Personal Security</div><div class="svc-desc">Discreet, professional bodyguard and personal protection for executives, VIPs, public figures and high-net-worth individuals across Gujarat.</div><span class="svc-tag">Elite Protection</span></div></div>
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg1.png" alt="Residential Security" loading="lazy"><div class="svc-num">02</div></div><div class="svc-body"><div class="svc-name">Residential Security</div><div class="svc-desc">Dedicated guards for housing societies, gated communities, bungalows and apartments. Entry management, visitor control and night patrol included.</div><span class="svc-tag">24/7 Available</span></div></div>
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg2.png" alt="Commercial Security" loading="lazy"><div class="svc-num">03</div></div><div class="svc-body"><div class="svc-name">Commercial Security</div><div class="svc-desc">Professional security for offices, retail shops, malls and showrooms — ensuring safe operations and full asset protection round the clock.</div><span class="svc-tag">Trained Guards</span></div></div>
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg3.png" alt="Industrial Security" loading="lazy"><div class="svc-num">04</div></div><div class="svc-body"><div class="svc-name">Industrial Security</div><div class="svc-desc">Protecting factories, warehouses, plants and industrial zones from unauthorized access, theft and safety hazards with constant monitoring.</div><span class="svc-tag">Site Protection</span></div></div>
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg4.png" alt="Event Bouncer" loading="lazy"><div class="svc-num">05</div></div><div class="svc-body"><div class="svc-name">Event Bouncer</div><div class="svc-desc">Skilled bouncers for weddings, concerts, corporate events and exhibitions. Crowd control and VIP guest management included.</div><span class="svc-tag">Event Ready</span></div></div>
+    <div class="svc-card"><div class="svc-img-wrap"><img src="images/simg6.png" alt="Housekeeping Staff" loading="lazy"><div class="svc-num">06</div></div><div class="svc-body"><div class="svc-name">Housekeeping Staff</div><div class="svc-desc">Trained, background-verified housekeeping professionals for offices, residential complexes, hotels and commercial spaces.</div><span class="svc-tag">Verified Staff</span></div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY US -->
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="sec-head">
+    <div class="sec-label">Why Choose RSP</div>
+    <div class="sec-title">The RSP <span>Advantage</span></div>
+    <p class="sec-desc">What sets Red Force Security apart  our commitment runs deeper than just showing up.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="why-t">24/7 Operations</div>
+      <div class="why-d">Our security personnel operate around the clock, every day of the year — no gaps in protection.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div class="why-t">Background Verified</div>
+      <div class="why-d">Every guard passes thorough background checks and identity verification before deployment.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+      <div class="why-t">Trained Professionals</div>
+      <div class="why-d">Rigorous physical and tactical training ensures guards are prepared for any situation.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="why-t">Licensed & Compliant</div>
+      <div class="why-d">Fully licensed under applicable security regulations with adherence to all legal norms.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div class="why-t">Customized Plans</div>
+      <div class="why-d">Security plans tailored to each client's premises, risk level and budget requirements.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.08 1.14 2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <div class="why-t">Quick Response</div>
+      <div class="why-d">Swift deployment and immediate response to incidents — our team acts decisively when it matters.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" id="clients">
+  <div class="clients-intro">
+    <div>
+      <div class="sec-label">Our Clients</div>
+      <div class="sec-title">Trusted by <span>Leading</span> Organizations</div>
+    </div>
+    <div class="clients-note">Proudly securing premium commercial spaces, residential communities, and major public events.</div>
+  </div>
+  
+  <div class="logo-grid">
+    <div class="logo-item"><img src="images/client1.jpeg" alt="Client Logo 1"></div>
+    <div class="logo-item"><img src="images/client2.png" alt="Client Logo 2"></div>
+    <div class="logo-item"><img src="images/client3.jpeg" alt="Client Logo 3"></div>
+    <div class="logo-item"><img src="images/client4.jpeg" alt="Client Logo 4"></div>
+    <div class="logo-item"><img src="images/client5.jpeg" alt="Client Logo 5"></div>
+    <div class="logo-item"><img src="images/client6.jpeg" alt="Client Logo 6"></div>
+  </div>
+
+  <div class="clients-cta">
+    <p>Want to secure your facility? Join our network of protected clients.</p>
+    <a href="#contact" class="btn-red" style="font-size:11px;padding:10px 24px;">Become Our Client →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="sec-head">
+    <div class="sec-label">Get In Touch</div>
+    <div class="sec-title">Request a <span>Free Quote</span></div>
+    <p class="sec-desc">Reach out for a free consultation and a customized security proposal tailored to your requirements.</p>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <div class="cdetail"><div class="cicon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="clabel">Address</div><div class="cval">Titanium City Center Business Park,<br>Prahladnagar, Near Sachin Tower,<br>Ahmedabad, Gujarat</div></div></div>
+      <div class="cdetail"><div class="cicon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.08 1.14 2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div><div><div class="clabel">Phone</div><div class="cval">+91 7621 975 177</div></div></div>
+      <div class="cdetail"><div class="cicon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="clabel">Email</div><div class="cval">Askus.redforce@gmail.com</div></div></div>
+      <div class="cdetail"><div class="cicon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="clabel">Working Hours</div><div class="cval">24 Hours / 7 Days a Week<br><span style="font-size:11px;color:#777">Always available for emergencies</span></div></div></div>
+      <a href="https://wa.me/917621975177" class="whatsapp-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Chat on WhatsApp</a>
+    </div>
+    <div class="cform">
+  <div class="form-row">
+    <div class="fg">
+      <label class="flabel">Full Name</label>
+      <input type="text" id="wa-name" class="finput" placeholder="Your name">
+    </div>
+    <div class="fg">
+      <label class="flabel">Phone Number</label>
+      <input type="tel" id="wa-phone" class="finput" placeholder="+91 XXXXX XXXXX">
+    </div>
+  </div>
+  <div class="fg">
+    <label class="flabel">Email Address</label>
+    <input type="email" id="wa-email" class="finput" placeholder="your@email.com">
+  </div>
+  <div class="fg">
+    <label class="flabel">Service Required</label>
+    <select id="wa-service" class="fselect finput">
+      <option value="">Select a service...</option>
+      <option>Residential Security</option>
+      <option>Commercial Security</option>
+      <option>Industrial Security</option>
+      <option>Event Bouncer</option>
+      <option>Personal Security</option>
+      <option>Housekeeping Staff</option>
+    </select>
+  </div>
+  <div class="fg">
+    <label class="flabel">Message</label>
+    <textarea id="wa-message" class="ftextarea finput" placeholder="Tell us about your security requirements..."></textarea>
+  </div>
+  <button class="fsubmit" id="submitBtn">Send to WhatsApp →</button>
+</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="f-logo"><img src="images/logo.png" alt="RSP Logo"><div><div class="nav-brand"><span>RED</span> FORCE</div><div class="nav-sub">Security Protection</div></div></div>
+      <p class="f-tagline">Professional security solutions for homes, businesses and individuals across Ahmedabad since 2009.</p>
+      <div style="font-size:11px;color:#777">📍 Titanium City Center, Prahladnagar, Ahmedabad</div>
+    </div>
+    <div><div class="f-col-title">Services</div><ul class="f-links"><li><a href="#services">Residential Security</a></li><li><a href="#services">Commercial Security</a></li><li><a href="#services">Industrial Security</a></li><li><a href="#services">Event Bouncer</a></li><li><a href="#services">Personal Security</a></li><li><a href="#services">Housekeeping Staff</a></li></ul></div>
+    <div><div class="f-col-title">Company</div><ul class="f-links"><li><a href="#about">About RSP</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#clients">Our Clients</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+    <div><div class="f-col-title">Contact</div><ul class="f-links"><li><a href="tel:+917621975177">+91 7621 975 177</a></li><li><a href="mailto:Askus.redforce@gmail.com">Askus.redforce@gmail.com</a></li><li style="color:#777;font-size:11px;margin-top:10px;line-height:1.6">Titanium City Center,<br>Prahladnagar, Ahmedabad</li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="f-copy">© 2025 <span>Red Force Security Protection (RSP)</span>. All Rights Reserved.</div>
+    <div class="f-copy">Est. 2009 · Ahmedabad, Gujarat, India</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
