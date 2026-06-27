@@ -155,41 +155,114 @@ section{padding:96px 6%}
 .why-d { font-size: 12px; font-weight: 300; color: var(--white-muted); line-height: 1.65; }
 
 /* CLIENTS - Simple Clean Logo Grid */
-.clients { background: var(--black); }
-.clients-intro { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px; }
-.clients-note { font-size: 12px; color: var(--white-muted); border-left: 2px solid var(--red); padding-left: 14px; line-height: 1.6; max-width: 320px; }
-.logo-grid { 
-  display: grid; 
-  grid-template-columns: repeat(6, 1fr); 
-  gap: 16px; 
-  margin-bottom: 32px; 
+/* Outer window constraint container */
+.logo-ticker-vertical {
+  width: 250px;             /* Match the individual image aspect width */
+  height: 500px;            /* Determines how many logos show at once vertically */
+  margin: 0 auto;
+  overflow: hidden;         /* Hides the logos waiting in queue outside the box */
+  position: relative;
+  background: transparent;
 }
-.logo-item { 
-  background: var(--black-card); 
-  border: 1px solid var(--border); 
-  border-radius: 2px; 
-  height: 110px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  padding: 16px; 
-  overflow: hidden; 
-  transition: border-color 0.25s, background-color 0.25s; 
-}
-.logo-item img { 
+
+/* Optional styling: Creates a smooth fade-away shadow gradient effect at the top and bottom edges */
+.logo-ticker-vertical::before,
+.logo-ticker-vertical::after {
+  content: "";
+  height: 15%;
   width: 100%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.logo-ticker-vertical::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.logo-ticker-vertical::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+/* The animating track containing both image blocks */
+.ticker-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 25s linear infinite;
+}
+
+/* Logo image container settings */
+/* Outer window container spanning the full width of your section */
+.logo-ticker-horizontal {
+  width: 100%;
+  overflow: hidden;         /* Hides the logos waiting in line off-screen */
+  position: relative;
+  background: transparent;
+  padding: 20px 0;
+}
+
+/* Smooth fade gradient effect on the left and right edges */
+.logo-ticker-horizontal::before,
+.logo-ticker-horizontal::after {
+  content: "";
   height: 100%;
-  object-fit: contain; 
-  transform: scale(1.15); 
-  filter: grayscale(100%) opacity(40%); 
-  transition: filter 0.25s ease, transform 0.25s ease; 
+  width: 150px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
 }
-.logo-item:hover img { 
-  filter: grayscale(0%) opacity(85%); 
-  transform: scale(1.2); 
+.logo-ticker-horizontal::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
 }
-.clients-cta { text-align: center; padding: 24px; background: rgba(217,59,0,0.03); border: 1px solid var(--border); border-radius: 1px; }
-.clients-cta p { font-size: 13px; color: var(--white-dim); margin-bottom: 12px; }
+.logo-ticker-horizontal::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+/* The long track running sideways */
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scrollHorizontal 30s linear infinite;
+}
+
+/* Layout groups sitting side-by-side */
+.ticker-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;                /* Gap space between cards sideways */
+  padding-right: 30px;      /* Matches the gap to prevent jerking at the loop reset */
+}
+
+/* Auto cropping card container for your logo assets */
+.ticker-group img {
+  width: 200px;             /* Standard width for cards */
+  height: 110px;            /* Standard height for cards */
+  object-fit: contain;      /* Keeps aspect ratio centered inside the box */
+  background: #ffffff;      /* Clean white backdrop card background */
+  border: 1px solid #e8e8e8;/* Subtle boundary line from image_8cb5a8.jpg */
+  border-radius: 8px;       /* Beautiful rounded corner look */
+  padding: 12px;            /* Inner card padding space */
+  box-sizing: border-box;
+}
+
+/* Pauses layout movement when client hovers over a brand logo */
+.logo-ticker-horizontal:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+/* Infinite sideways mathematical transition loop */
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Pulls exactly half the total track width seamlessly */
+  }
+}
+
 
 /* CONTACT */
 .contact{background:var(--black-section)}
